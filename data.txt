@@ -1,0 +1,13 @@
+{
+	  "controller": "common",
+	  "cmd": "sys_serviceAu",
+	  "query_way": "2",
+	  "username": "余炳谊",
+	  "password": "123456",
+	  "REQIP": "172.25.1.126",
+	  "TransactionId": 1582789214677,
+	  "UserId": 1042,
+	  "Token": "55cf83feb7f43f0d241bf63a579ff06e",
+	  "TokenType": "common",
+	  "localSer": "common"
+}

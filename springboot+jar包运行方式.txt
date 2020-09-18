@@ -1,0 +1,15 @@
+将打完的jar包上传到linux服务器，切换到jar所在的目录执行 java -jar xxxx.jar命令，
+但是此方法只要命令窗口关闭，程序运行 便结束，我找到的方法就是使用管道来实现运行，
+这样就不会因为关闭客户端（xshell），导致的进程也被删除的情况：
+首先先用vim创建文件start.shvim start.sh在文件中写入java -jar xxx.jar在保存一下：wq！
+给文件 chmod 777 start.sh 权限
+其次：nohup  ./start.sh &
+就可以运行了。
+最后扩展一下linux 常用命令：
+netstat -anp | grep 80     : 查看80端口
+kill sid                                :关闭sid的端口
+cat start.sh                        :查看start.sh 文件的内容
+centos虚拟机存在时间不准确，校准方法（必须可以访问外网才能有效同步）：
+rdate -t 60 -s stdtime.gov.hk hwclock -w
+
+
